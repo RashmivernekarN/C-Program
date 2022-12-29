@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+#include<time.h>
+class digital_clock
+{
+      time_t t;
+public:
+	void read()
+	{
+	   time(&t);
+	  }
+void display()
+{
+cout<<"\n\t today date and time is="<<ctime(&t)<<endl;
+}
+};
+void main()
+{
+digital_clock d;
+clrscr();
+d.read();
+d.display();
+getch();
+}

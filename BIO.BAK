@@ -1,0 +1,26 @@
+//program to display your biodata
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   clrscr();
+   printf("\n---------BIODATA-------\n");
+   printf("\n*******************************\n");
+   printf("\nName   :    abc  \nAddress    :Hosur Hubli\n");
+   printf("Contact:362547235473\nHobby  :reading");
+   printf("\n**********************************");
+   getch();
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+int i,f=1;
+void fact(int );
+
+void main()
+{
+   int n;
+   clrscr();
+   printf("\nenter any integer");
+   scanf("%d",&n);
+   fact(n);
+   getch();
+}
+
+
+void fact(int x)
+{
+   for(i=1;i<=x;i++)
+    {
+       f=f*i;
+     }
+     printf("\n\tFACTORIAL OF %d is %d",x,f);
+ }
