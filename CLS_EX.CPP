@@ -1,0 +1,32 @@
+//program to illustrate class
+
+#include<iostream.h>
+#include<conio.h>
+
+class student
+{
+   private:int rl_no;
+	   float per;
+	   char name[20];
+   public: void getdata()
+	   {
+		cout<<"\n\tenter values for roll num name per";
+		cin>>rl_no>>name>>per;
+	    }
+	    void putdata();
+};
+void student::putdata()
+{
+  cout<<"\n\tstudent details are\n\t";
+  cout<<"\n\tROLL NUM="<<rl_no;
+  cout<<"\n\tNAME="<<name<<"\n\tPER="<<per;
+}
+void main()
+{
+    student s;
+    clrscr();
+    s.getdata();
+    s.putdata();
+    getch();
+}
+

@@ -1,0 +1,38 @@
+//program to illustrate copy constructor
+#include<iostream.h>
+#include<conio.h>
+class point
+{
+   int x;
+   int y;
+   public:point()
+	  { x=100;
+	    y=200;   }
+	  point(point &p)
+	  {
+	     x=p.x;
+	     y=p.y;
+	  }
+	  void display()
+	  {
+	     cout<<"\n\tx="<<x;
+	     cout<<"\n\ty="<<y;
+	   }
+};
+void main()
+{
+    clrscr();
+    point p1;
+    point p2(p1);//copy constructor call
+    point p3=p2;//copy constructor call
+    point p4;
+    cout<<"\n\n\tobj p1";
+    p1.display();
+    cout<<"\n\n\tobj p2";
+    p2.display();
+    cout<<"\n\n\tobj p3";
+    p3.display();
+    cout<<"\n\n\tobj p4";
+    p4.display();
+    getch();
+}

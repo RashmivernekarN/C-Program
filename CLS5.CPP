@@ -1,0 +1,39 @@
+/*(class with multiple object)create a class called bank,data members of
+the class are name,acc_no,bal ,use appropriate member function to accept
+and display data members of the class and diaplay.write cpp program to
+accept and print 2 account holders information*/
+#include<iostream.h>
+#include<conio.h>
+class bank
+{
+   private:char name[20];
+	    int acc_no;
+	    float bal;
+   public:void getdata();
+	  void putdata();
+};
+void bank::getdata()
+{
+    cout<<"\n\tenter name acc no and balance of account holders ";
+    cin>>name>>acc_no>>bal;
+}
+void bank::putdata()
+{
+
+   cout<<"\n\tname="<<name<<"\n\tacc="<<acc_no<<"\n\tbalance="<<bal;
+}
+
+void main()
+{
+   bank b1,b2;
+   clrscr();
+   cout<<"\nenter first account holder information";
+   b1.getdata();
+   cout<<"\nenter second account holder information";
+   b2.getdata();
+   cout<<"\n account holder informations\n";
+   b1.putdata();
+   b2.putdata();
+   getch();
+}
+

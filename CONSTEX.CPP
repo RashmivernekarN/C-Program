@@ -1,0 +1,27 @@
+//illustration of constructor
+#include<iostream.h>
+#include<conio.h>
+class xyz
+{
+    int a,b;
+    public:xyz()
+	    {
+	       cout<<"\n\tenter values for a and b";
+	       cin>>a>>b;
+	    }
+	     void display()
+	     {
+		 cout<<"\n\ta="<<a<<"\n\tb="<<b;
+	      }
+};
+void main()
+{
+    clrscr();
+    xyz x;//implicit call
+    xyz y;
+    cout<<"\nwith object X";
+    x.display();
+    cout<<"\nwith object Y";
+    y.display();
+    getch();
+}

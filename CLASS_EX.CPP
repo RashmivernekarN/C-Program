@@ -1,0 +1,44 @@
+#include<iostream.h>
+#include<conio.h>
+class sample
+{
+   private:char name[15];
+	  long int adhar;
+	  char city[15];
+	  long int tel;
+    public: void accept()
+	   {
+	      cout<<"\n\tenter person name";
+	      cin>>name;
+	      cout<<"\n\tenter adhar number";
+	      cin>>adhar;
+	      cout<<"\n\tenter city";
+	      cin>>city;
+	      cout<<"\n\tenter telephone";
+	      cin>>tel;
+	      }
+	      void display();
+};
+void sample::display()
+{
+	cout<<"\n\t"<<name<<"\t\t"<<adhar<<"\t\t"<<city<<"\t"<<tel<<endl;
+  }
+  void main()
+  {
+     sample s[5];
+     int i;
+     clrscr();
+     cout<<"\n\teneter persons information";
+     for(i=0;i<5;i++)
+     {
+	cout<<"\n\tenter "<<i+1<<"person information";
+	     s[i].accept();
+     }
+     cout<<"\n\tperson name\tadhar num\tcity\ttelephone\n";
+     cout<<"------------------------------------------------\n";
+     for(i=0;i<5;i++)
+       {
+	  s[i].display();
+	}
+	getch();
+}

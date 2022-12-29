@@ -1,0 +1,14 @@
+//Program to check smallest of 3 numbers
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int a,b,c,small;
+   clrscr();
+   printf("\n\tenter values for a b and c");
+   scanf("%d%d%d",&a,&b,&c);
+   small=(a<b&&a<c)?a:((b<c)?b:c);
+   printf("\n\ta=%d\n\tb=%d\n\tc=%d\n\tsmall=%d",a,b,c,small);
+   getch();
+}
