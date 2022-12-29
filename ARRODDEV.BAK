@@ -1,0 +1,32 @@
+/*program to read N array elements and find the sum of odd and even elements*/
+#include <iostream.h>
+#include <conio.h>
+void main()
+{
+ int a[50],i,n,f=0,key;
+ clrscr();
+ cout<<"\n Enter the limit";
+ cin>>n;
+ cout<<"enter the array element";
+ for(i=0;i<n;i++)
+ {
+ cin>>a[i];
+ }
+ cout<<"\n enter a search key";
+ cin>>key;
+ for(i=0;i<n;i++)
+ {
+ if(a[i];i<n;i++)
+ {
+ if(a[i]==key)
+ {
+ f=1;
+ break;
+ }
+ }
+ if(f>0)
+ cout<<"\n search key is found at location"<<i+1;
+ else
+ cout<<"search key is not found";
+ getch();
+ }

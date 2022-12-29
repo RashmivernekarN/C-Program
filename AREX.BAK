@@ -1,0 +1,21 @@
+//sum of single dimensional array elements
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int a[5],i,sum=0;
+    clrscr();
+    printf("\nenter array elements");
+    for(i=0;i<5;i++)
+      scanf("%d",&a[i]);
+    printf("the array elements are\n");
+    for(i=0;i<5;i++)
+    {
+	printf("\t\t%d\n",a[i]);
+	sum=sum+a[i];
+    }
+    printf("\n\t\tsum=%d",sum);
+    getch();
+}

@@ -1,0 +1,16 @@
+//area and circumference of the circle
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   double r,area,cir;
+   clrscr();
+   printf("\n\tenter rad of the circle");
+   scanf("%lf",&r);
+   area=3.142*r*r;
+   cir=2*3.142*r;
+ printf("\n\trad=%lf\n\tarea of circle=%lf\n\tcircumference=%lf",r,area,cir);
+   getch();
+}

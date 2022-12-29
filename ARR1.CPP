@@ -1,0 +1,22 @@
+//program to accept single dimensional array elements and display the same.
+//find sum of array elements.
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+   int a[100],i,n,sum=0;
+   clrscr();
+   cout<<"\n\nenter size of an array";
+   cin>>n;
+   cout<<"\n\tenter elements of the array";
+   for(i=0;i<n;i++)
+      cin>>a[i];
+      cout<<"\n\narray elements are\n";
+ for(i=0;i<n;i++)
+   {
+      cout<<"\n\ta["<<i<<"]="<<a[i];
+      sum=sum+a[i];
+  }
+  cout<<"\n\nsum of array elements are="<<sum;
+  getch();
+  }

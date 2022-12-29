@@ -1,0 +1,23 @@
+//program to accept single dimensional array elements and display the same
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int a[10],i,n;
+   clrscr();
+   printf("\n\tenter array limit");
+   scanf("%d",&n);
+   printf("\n\tenter %d array elements",n);
+   for(i=0;i<n;i++)
+   {
+      scanf("%d",&a[i]);
+   }
+   printf("\n\tARRAY ELEMENTS ARE\n");
+      for(i=0;i<n;i++)
+      {
+	 printf("\n\ta[%d]=%d\n",i,a[i]);
+      }
+      getch();
+}

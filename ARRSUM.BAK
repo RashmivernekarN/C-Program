@@ -1,0 +1,4 @@
+/*program to accept 2 single dimensional array elements and
+find their corresponding sum */
+
+#include<stdio.h>

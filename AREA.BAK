@@ -1,0 +1,15 @@
+//program to find area of circle
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   double r,area;
+   clrscr();
+    printf("\nenter radious of circle");
+    scanf("%f",&r);
+   area=3.142*r*r;
+   printf("\n\tradious=%f\n\tarea of circle=%f",r,area);
+   getch();
+}
