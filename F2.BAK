@@ -1,0 +1,19 @@
+//program to illustrate function
+
+#include<stdio.h>
+#include<conio.h>
+float b,h;
+void area(float  ,float  );
+
+void main()
+{
+   clrscr();
+   printf("\n\tenter base and height of triagle");
+   scanf("%f%f",&b,&h);
+   area(b,h);
+   getch();
+}
+void area(float x,float y)
+{
+   printf("\n\tarea of triangle=%f",0.5*x*y);
+ }

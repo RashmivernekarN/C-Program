@@ -1,0 +1,19 @@
+//program to find factorial of given number.
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+   int i,num,fact=1;
+   clrscr();
+   cout<<"\n\tenter any number to find factorial";
+   cin>>num;
+  i=1;
+   do
+	{
+	 fact=fact*i;
+	 i++;
+      }while(i<=num);
+   cout<<"\n\t\tfactorial of "<<num<<"is "<<fact;
+   getch();
+}

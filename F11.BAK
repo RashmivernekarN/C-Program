@@ -1,0 +1,24 @@
+/*prg to find the factorial of a given num
+using  arguments but no return value*/
+#include<stdio.h>
+#include<conio.h>
+void fact(int); //prototype declaration
+void main()
+  {
+     int n;
+     clrscr();
+     printf("\n Enter any num");
+     scanf("%d",&n);
+     fact(n);
+  }
+  void fact(int x)
+    {
+      int i,f;
+      for(i=1,f=1;i<=x;i++)
+       {
+	 f=f*i;
+       }
+      printf("\n Factorial of a given num=%d",f);
+
+     getch();
+    }

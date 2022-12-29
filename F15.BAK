@@ -1,0 +1,27 @@
+/*prg to check whether given num is a palindrome or not
+using  arguments but no return value*/
+#include<stdio.h>
+#include<conio.h>
+void pal(int); //prototype declaration
+void main()
+  {  int n;
+     clrscr();
+     printf("\n Enter any num");
+     scanf("%d",&n);
+     pal(n);
+  }
+  void pal(int x)
+    { int temp,d,r=0;
+      temp=x;
+      while(x>0)
+       {
+	 d=x%10;
+	 r=(r*10)+d;
+	 x=x/10;
+       }
+       if(temp==r)
+	 printf("\n Given num=%d is a palindrome no",temp);
+       else
+	printf("\n Given num=%d is not a palindrome no",temp);
+     getch();
+    }

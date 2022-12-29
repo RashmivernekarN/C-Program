@@ -1,0 +1,27 @@
+  /*prg to find the biggest of three numbers using sub program*/
+  #include<stdio.h>
+  #include<conio.h>
+  int big(int,int,int);//prototype declaration
+  void main()
+    {
+      int a,b,c,lar;//local variables
+      clrscr();
+      printf("\n Enter two numbers");
+      scanf("%d%d%d",&a,&b,&c);
+      lar=big(a,b,c); //calling function
+      printf("\n  Biggest  of three nums=%d",lar);
+      getch();
+
+    }
+    int big(int x,int y,int z)  //called function
+      {
+	if(x>y)
+	  if(x>z)
+	  return(x);
+	else
+	  return(z);
+	else if(y>z)
+	  return(y);
+	else
+	  return(z);
+      }
