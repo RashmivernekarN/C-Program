@@ -1,0 +1,12 @@
+//cpp program to display a line of text
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+  clrscr();
+  cout<<"\n\nWELCOME TO C++ PROGRAMMING"<<endl;
+  cout<<"NAME:XYZ \n COURSE:BASIC\tTALLY\tPROGRAMMING";
+  getch();
+}

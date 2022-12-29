@@ -1,0 +1,21 @@
+//prg to find  area of a traingle using sub program
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+  {
+    float area(float,float); //prototype declaration
+    float ar,b,h;  //local variable
+    clrscr();
+    printf("\n Enter base and height");
+    scanf("%f%f",&b,&h);
+    ar=area(b,h);
+    printf("\n area of a traingle=%f",ar);
+    getch();
+  }
+  float area (float b,float h)         //formal variables
+    {
+      float ar;
+      ar=(0.5*b*h);
+      return(ar);
+     }

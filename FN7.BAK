@@ -1,0 +1,24 @@
+//prg to find factorial of a given no using sub program
+#include<stdio.h>
+#include<conio.h>
+int fact(int);
+void main()
+  {
+    int f,n;
+    clrscr();
+    printf("\n Enter any num");
+    scanf("%d",&n);
+    f=fact(n);
+    printf("\n Factorial of a given no=%d",f);
+    getch();
+  }
+  int fact(int n)         //formal variables
+    {
+      int i=1,f=1;
+	while(i<=n)
+	  {
+	   f=f*i;
+	   i++;
+	  }
+      return(f);
+     }

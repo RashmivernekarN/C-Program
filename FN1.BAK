@@ -1,0 +1,20 @@
+/*prg to find the sum of two numbers using sub program
+using no arguments but no return value*/
+#include<stdio.h>
+#include<conio.h>
+void sum(); //prototype declaration
+void main()
+  {
+    clrscr();
+    sum();//function call
+  }
+  void sum ()
+    {
+     int a,b,s;
+     printf("\n Enter two nums");
+     scanf("%d%d",&a,&b);
+     s=a+b;
+     printf("\n sum of 2 nums=%d",s);
+     getch();
+
+    }
