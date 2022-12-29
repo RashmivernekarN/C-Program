@@ -1,0 +1,24 @@
+e//prg to read N nums and find  the biggest element
+#include<iostream.h>
+#include<conio.h>
+void main()
+  {
+    int a[50],i,n,lar;
+    clrscr();
+    cout<<"\n Enter the limit";
+    cin>>n;
+    cout<<"\n Enter the elements";
+    for(i=0;i<n;i++)
+      {
+       cin>>a[i];
+      }
+    //find big
+    lar=a[0];
+    for(i=1;i<n;i++)
+      {
+       if(a[i]>lar)
+	 lar=a[i];
+      }
+    cout<<"\n Biggest elements"<<lar;
+    getch();
+  }

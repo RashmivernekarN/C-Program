@@ -1,0 +1,23 @@
+/*prg to read N nos and find the sum of all elements*/
+ #include<stdio.h>
+ #include<conio.h>
+ void main()
+  {
+   int a[50],i,n,sum=0;
+   clrscr();
+   printf("\n Enter the array  limit");
+   scanf("%d",&n);
+   printf("\n Enter elements");
+   for(i=0;i<n;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+   /*compute sum of all elements*/
+   for(i=0;i<n;i++)
+    {
+      sum=sum+a[i];
+    }
+   printf("\n\t sum of all elememts are:  %d",sum);
+
+   getch();
+  }

@@ -1,0 +1,12 @@
+/*prg display a simple message*/
+#include<stdio.h>
+#include<conio.h>
+int main()
+  {
+     clrscr();
+     printf(" \n All");
+     printf(" \n The");
+     printf(" \n Best");
+     //getch();
+     return 0;
+  }
