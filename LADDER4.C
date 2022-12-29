@@ -1,0 +1,20 @@
+/*program to check whether the entered character is vowel or not
+using ladder if*/
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  char ch;
+  clrscr();
+  printf("\nenter any character");
+  scanf("%c",&ch);
+  if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+     printf("ENTERD CHARACTER IS VOWEL");
+  else if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+       printf("ENTERD CHARACTER IS VOWEL");
+  else
+     printf("ENTERED CHARACTER IS NOT VOWEL");
+  getch();
+}

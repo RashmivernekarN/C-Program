@@ -1,0 +1,34 @@
+//illustrate ladder if
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int s1,s2,s3,s4,s5,s6,tot;
+   float per;
+   char grade;
+   clrscr();
+   printf("\n\tenter 6 subject marks");
+   scanf("%d%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5,&s6);
+   tot=s1+s2+s3+s4+s5+s6;
+   per=tot/6;
+    printf("\n\tTotal=%d\n\tPercentage=%f",tot,per);
+  if(per>=75)
+      grade='A';
+  else if(per>=60)
+      grade='B';
+  else if(per>=50)
+       grade='C';
+ else
+       grade='D';
+   printf("\n\tYour grade is=%c",grade);
+   if(grade=='A')
+       printf("\n\tEXCELLENT");
+   else if(grade=='B')
+	printf("\n\tVERY GOOD");
+  else if(grade=='C')
+	printf("\n\tGOOD");
+   else
+       printf("\n\tNEED TO IMPROVE");
+   getch();
+}

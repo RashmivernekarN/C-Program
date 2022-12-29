@@ -1,0 +1,15 @@
+//c prg leap yera or not leap yera//
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int yera;
+clrscr();
+printf("enter an year\n");
+scanf("%d",&year);
+if((yera%4=0 && year%100!=0)||(year%400=0))
+printf("entered year is leap year\n");
+else
+printf("entered year is not leap year\n");
+getch();
+}

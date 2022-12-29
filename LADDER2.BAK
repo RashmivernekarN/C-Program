@@ -1,0 +1,24 @@
+//program to check biggest of 4 numbers
+
+#include<stdio.h>
+#include<conio.h>
+ void main()
+ {
+   int a,b,c,d;
+   clrscr();
+   printf("\n\tenter values for a,b,c,d\t");
+   scanf("%d%d%d%d",&a,&b,&c,&d);
+   if(a>b&&a>c&&a>d)
+      printf("\n\t%d is big",a);
+   else if(b>a&&b>c&&b>d)
+	printf("\t%d is big",b);
+   else if(c>a&&c>b&&c>d)
+	printf("\t%d is big",c);
+   else if(d>a&&d>b&&d>c)
+	printf("\t%d id big",d);
+   else
+	printf("its not possible to say which is big");
+    getch();
+}
+
+

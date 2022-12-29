@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+  int p;
+  char grade;
+  clrscr();
+  cout<<"\n\tenter percentage of student";
+  cin>>p;
+  if(p>=90)
+      grade='A';
+  else if(p>=80)
+       grade='B';
+  else if(p>=70)
+	grade='C';
+  else if(p>=60)
+	grade='D';
+   else if(p>=50)
+	grade='E';
+   else
+       grade='F';
+  cout<<"\n\tSTUDENT GRADE IS   "<<grade;
+  getch();
+}
