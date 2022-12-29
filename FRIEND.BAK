@@ -1,0 +1,38 @@
+//illustrate function friendly to two classes.
+#include<iostream.h>
+#include<conio.h>
+class abc;
+class xyz
+{
+   int x;
+   public: void setval(int i)
+	   {
+	   x=i;
+	   }
+	   friend void max(abc   ,xyz   );
+};
+class abc
+{
+   int y;
+   public: void setval(int i)
+	   {   y=i;  }
+	   friend void max(abc   ,xyz   );
+};
+void max(abc a,xyz b)
+{
+      if(a.y>b.x)
+	 cout<<"\n\tmax="<<a.y;
+      else
+	 cout<<"\n\tmax="<<b.x;
+}
+void main()
+{
+   abc a1;
+   xyz x1;
+   clrscr();
+   a1.setval(10);
+   x1.setval(20);
+   max(a1,x1);
+   getch();
+}
+

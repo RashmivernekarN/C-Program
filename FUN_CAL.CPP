@@ -1,0 +1,39 @@
+//program to illustrate call by value and call by reference
+
+#include<iostream.h>
+#include<conio.h>
+
+void swap(int  ,int  );
+void swap1(int *,int  *);
+int t;   //global variable declaration
+
+void main()
+{
+    int a,b;
+    clrscr();
+    cout<<"\n\n\tenter values for a and b";
+    cin>>a>>b;
+    cout<<"\n\tBEFORE SWAPPING THE VALUES ARE\n";
+    cout<<"\n\ta="<<a<<"\n\tb="<<b;
+    swap(a,b); //call by val
+    swap1(&a,&b);//call by ref
+     getch();
+}
+void swap(int x,int y)
+{
+     cout<<"\n\n\tCALL BY VALUE\n";
+    t=x;
+    x=y;
+    y=t;
+    cout<<"\n\tAFTER SWAPPING THE VALUES ARE\n";
+    cout<<"\n\ta="<<x<<"\n\tb="<<y;
+}
+void swap1(int *p1,int *p2)
+{
+     cout<<"\n\n\tCALL BY REFERENCE\n";
+    t=*p1;
+    *p1=*p2;
+    *p2=t;
+    cout<<"\n\tAFTER SWAPPING THE VALUES ARE\n";
+    cout<<"\n\ta="<<*p1<<"\n\tb="<<*p2;
+}

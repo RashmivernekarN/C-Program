@@ -1,0 +1,19 @@
+//PROGRAM TO ILLUSTRATE FUNCTION without argument and with return type
+
+#include<stdio.h>
+#include<conio.h>
+   int x,y;
+int addition();//fuction declaration
+void main()
+{
+   clrscr();
+   printf("\nsum=%d",addition());//calling function
+   getch();
+}
+int addition()//called function(functin definition)
+{
+   printf("enter 2 integers");
+   scanf("%d%d",&x,&y);
+  printf("\nx=%d\ny=%d",x,y);
+  return(x+y);
+}

@@ -1,0 +1,25 @@
+//swap  2 variables using function
+#include<stdio.h>
+#include<conio.h>
+
+void swap(int a,int b);
+int t;
+void main()
+{
+   int x,y;
+   clrscr();
+   printf("\n\n\tenter 2 integers");
+   scanf("%d%d",&x,&y);
+   printf("\n\tbefore swappping the values are\n");
+   printf("\ta=%d\n\tb=%d",x,y);
+   swap(x,y);
+   getch();
+}
+void swap(int a,int b)
+{
+   t=a;
+   a=b;
+   b=t;
+   printf("\n\tafter swappping the values are\n");
+   printf("\ta=%d\n\tb=%d",a,b);
+}

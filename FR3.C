@@ -1,0 +1,16 @@
+//program to display your name for the specified number of time
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int i,time;
+   clrscr();
+   printf("\nHOW MANY TIMES YOU WANT TO DISPLAY YOUR NAME");
+   scanf("%d",&time);
+   for(i=0;i<time;i++)
+   {
+      printf("\n\tKEONICS");
+   }
+   getch();
+}

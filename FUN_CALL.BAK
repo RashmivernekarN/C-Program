@@ -1,0 +1,40 @@
+//program to illustrate call by value and call by reference
+//pointer with functions
+
+#include<stdio.h>
+#include<conio.h>
+
+void swap(int  ,int  );
+void swap1(int *,int  *);
+int t;
+
+void main()
+{
+    int a,b;
+    clrscr();
+    printf("\n\n\tenter values for a and b");
+    scanf("%d%d",&a,&b);
+    printf("\n\tBEFORE SWAPPING THE VALUES ARE\n");
+    printf("\ta=%d\n\tb=%d",a,b);
+    swap(a,b); //call by val
+    swap1(&a,&b);//call by ref
+     getch();
+}
+void swap(int x,int y)
+{
+     printf("\n\n\tCALL BY VALUE\n");
+    t=x;
+    x=y;
+    y=t;
+    printf("\nAFRTER SAPPING THE VALUES ARE\n");
+    printf("\n\ta=%d\n\tb=%d",x,y);
+}
+void swap1(int *p1,int *p2)
+{
+     printf("\n\n\tCALL BY REFERENCE\n");
+    t=*p1;
+    *p1=*p2;
+    *p2=t;
+    printf("\nAFTER SAPPING THE VALUES ARE\n");
+    printf("\n\ta=%d\n\tb=%d",*p1,*p2);
+}

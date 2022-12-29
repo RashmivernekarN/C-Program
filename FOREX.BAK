@@ -1,0 +1,26 @@
+//sum of natural numbersup to n using for loop
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int i,n,sum=0;
+   clrscr();
+   printf("\nenter final value\n");
+   scanf("%d",&n);
+   printf("\n\tnatural numbers up to %d are\n",n);
+   for(i=1;i<=n;i++)
+   {
+      printf("\n\t%d",i);
+      sum=sum+i;
+   }
+   printf("\n\tsum of natural numbers up to %d are %d",n,sum);
+   getch();
+}
+
+
+
+
+
+

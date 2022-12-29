@@ -1,0 +1,37 @@
+//program to find addition of two numbers
+//function with return value without argument
+#include<stdio.h>
+#include<conio.h>
+int a,b,s;//global variable variaable declaration
+int addition(int ,int);
+void main()
+{
+   clrscr();
+    printf("\n\tenter values for a and b");
+  scanf("%d%d",&a,&b);
+     printf("sum=%d",addition(a,b));
+   getch();
+}
+int addition(int a,int b)
+{
+
+  s=a+b;
+  return(s);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
