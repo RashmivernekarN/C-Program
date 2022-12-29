@@ -1,0 +1,17 @@
+//program to ilustrate inline function
+#include<iostream.h>
+#include<conio.h>
+inline float area(float b,float h )
+{
+	return(0.5*b*h);
+}
+void main()
+{
+	float x,y,z;
+	clrscr();
+	cout<<"\nEnter x,y values";
+	cin>>x>>y;
+	z=area(x,y);
+	cout<<"\narea of triangle="<<z;
+getch();
+}

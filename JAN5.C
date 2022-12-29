@@ -1,0 +1,18 @@
+//program to find sum and average of 3 numbers
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int a,b,c,sum,avg;
+  clrscr();
+  a=10;
+  b=20;
+  c=30;
+  sum=a+b+c;
+  avg=sum/3;
+  printf("\n\n\ta=%d\n\n\tb=%d\n\n\tc=%d",a,b,c);
+  printf("\n\n\tsum=%d\n\n\taverage=%d",sum,avg);
+  getch();
+}

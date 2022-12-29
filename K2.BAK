@@ -1,0 +1,21 @@
+  /*Program to find sum of two nums using global variable*/
+  #include<iostream.h>
+  #include<conio.h>
+  int sum;
+  void main()
+    {
+      int a,b;
+      clrscr();
+      cout<<"\n Enter two nums";
+      cin>>a>>b;
+      sum=a+b;
+      cout<<"\n Sum of two nums="<<sum;
+      getch();
+
+    }
+
+
+
+
+
+

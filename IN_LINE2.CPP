@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+inline void  area(float b,float h )
+{
+	cout<<"\narea of the triangle="<<(0.5*b*h);
+}
+void main()
+{
+	float x,y;
+	clrscr();
+	cout<<"\nEnter x,y values";
+	cin>>x>>y;
+	area(x,y);
+getch();
+}
