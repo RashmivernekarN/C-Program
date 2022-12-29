@@ -1,0 +1,26 @@
+//program to accept 2 one dimensional array and find there corresponding sum
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int a[10],b[10],s[10],i,n;
+   clrscr();
+   printf("\n\n\tenter size of an array");
+   scanf("%d",&n);
+   printf("\n\tenter first array elements");
+   for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+  printf("\n\tenter second array elements");
+   for(i=0;i<n;i++)
+     scanf("%d",&b[i]);
+   printf("\n\tsum array\n");
+   printf("\t\tA\tB\tSUM\n");
+   for(i=0;i<n;i++)
+   {
+      s[i]=a[i]+b[i];
+      printf("\t\t%d\t%d\t%d\n\n",a[i],b[i],s[i]);
+  }
+  getch();
+  }
+
+
