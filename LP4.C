@@ -1,0 +1,19 @@
+//program to display even numbers up to n
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int i,n;
+   clrscr();
+   printf("\n\tenter final value");
+   scanf("%d",&n);
+   printf("\n\tEVEN Numbers Are\n");
+   i=2;
+   while(i<=n)
+   {
+      printf("\n\t%d",i);
+      i=i+2;
+   }
+   getch();
+}

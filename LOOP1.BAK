@@ -1,0 +1,21 @@
+//program, to illustrate while loop(find sum of natural numbers up to n)
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+  int i,n,s=0;
+  clrscr();
+  cout<<"\n\tenter final value";
+  cin>>n;
+  cout<<"\n\tnatural numbersup to "<<n<<" are\n";
+  i=1;
+  while(i<=n)
+  {
+     cout<<"\n\t"<<i;
+     s=s+i;
+     i++;
+  }
+  cout<<"\n\tsum of natural numbers="<<s;
+  getch();
+}

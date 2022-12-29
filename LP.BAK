@@ -1,0 +1,22 @@
+//prog to display sum of n natural numbers
+
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+   int i,n;
+   clrscr();
+//   cout<<"enter final value";
+//   cin>>n;
+   i=2;
+   do
+   {
+      cout<<i<<"\t";
+//      sum=sum+i;
+      i=i+2;
+   }   while(i<=100);
+//   cout<<"\nsum="<<sum;
+   getch();
+}

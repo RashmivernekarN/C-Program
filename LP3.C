@@ -1,0 +1,21 @@
+//program to display n natural numbers and there product using while loop
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+   int i,n,p=1;
+   clrscr();
+   printf("\n\tenter final value");
+   scanf("%d",&n);
+   printf("\n\tNatural Numbers Are\n");
+   i=1;
+   while(i<=n)
+   {
+      printf("\n\t%d",i);
+      p=p*i;
+      i++;
+   }
+   printf("\n\tproduct of natural numbers are=%d",p);
+   getch();
+}
