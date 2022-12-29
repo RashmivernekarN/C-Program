@@ -1,0 +1,19 @@
+//program to illustrate function
+
+#include<iostream.h>
+#include<conio.h>
+void addition(int  ,int   );//function declaration
+
+void main()
+{
+   int a,b;
+   clrscr();
+   cout<<"\nenter any two integers ";
+   cin>>a>>b;
+   addition(a,b);//calling function(a and b are actual parameters)
+   getch();
+}
+void addition(int p,int q) //called function(p and q are formal parameters)
+{
+   cout<<"\n\tsum="<<p+q;
+}

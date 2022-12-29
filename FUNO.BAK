@@ -1,0 +1,40 @@
+//program to find area of circle square triangle using function overloading
+#include<iostream.h>
+#include<conio.h>
+void area(float ,float );
+float area();
+void area(float s);
+void main ()
+{
+   float b,h,a,A;
+   clrscr();
+   cout<<"\n\n\tEnter breadth & height of triangle";
+   cin>>b>>h;
+   area(b,h);
+   A=area();
+   cout<<"\nArea of the circle"<<A;
+   cout<<"\nEnter side of the square";
+   cin>>a;
+   area(a);
+   getch();
+}
+void area(float x,float y)
+{
+   float p;
+   p=0.5*x*y;
+   cout<<"\nArea of triangle="<<p;
+}
+float area()
+{
+   float q,z;
+   cout<<"\nEnter radius of the circle";
+   cin>>z;
+   q=3.142*z*z;
+     return(q);
+}
+void area(float s)
+{
+  float m;
+  m=s*s;
+  cout<<"\n area of square="<<m;
+}

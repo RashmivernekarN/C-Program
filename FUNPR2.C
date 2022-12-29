@@ -1,0 +1,23 @@
+//sum of even numbers up to n using function
+#include<stdio.h>
+#include<conio.h>
+int i,sum=0;
+int evensum(int );
+void main()
+{
+   int n;
+   clrscr();
+   printf("\n\tenter final value");
+   scanf("%d",&n);
+   printf("\n\tsum of even numbers up to %d is %d",n,evensum(n));
+   getch();
+}
+int evensum(int num)
+{
+  for(i=0;i<num;i=i+2)
+  {
+     printf("\n\t%d",i);
+    sum=sum+i;
+    }
+    return(sum);
+}
