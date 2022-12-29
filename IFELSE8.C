@@ -1,0 +1,19 @@
+//program to check whether the entered number is positive or nagetive
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int num;
+   clrscr();
+   printf("\n\tenter any number");
+   scanf("%d",&num);
+   if(num>0)
+   {
+      printf("\n\t%d is POSITIVE",num);
+    }
+    else
+       {
+	printf("\n\t%d NAGETIVE",num);
+       }
+       getch();
+ }

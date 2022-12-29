@@ -1,0 +1,18 @@
+//program to  find biggest of 2 numbers
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int a,b;
+   clrscr();
+   printf("\n\tenter values for a and b");
+   scanf("%d%d",&a,&b);
+   if(a>b)
+   {
+      printf("\n\t%d is big",a);
+    }
+    else
+       {
+	printf("\n\t%d is big",b);
+       }
+       getch();}

@@ -1,0 +1,20 @@
+//program to check whether the entered number is even or odd
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int n;
+  clrscr();
+  printf("\nenter any integer");
+  scanf("%d",&n);
+  if(n%2==0)
+  {
+     printf("\t\t%d is EVEN",n);
+ }
+ else
+ {
+    printf("\t\t%d is ODD",n);
+ }
+ getch();
+}

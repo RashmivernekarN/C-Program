@@ -1,0 +1,21 @@
+//program to display result of a student
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   float p;
+   clrscr();
+   printf("\nenter percentage of a student");
+   scanf("%f",&p);
+   if(p>=85)
+      printf("DISTINCTION");
+   else if(p>=60)
+      printf("FIRST CLASS");
+    else if(p>=50)
+	printf("SECOND CLASS");
+     else if(p>=35)
+	printf("PASS");
+     else
+	 printf("FAIL");
+    getch();
+}
