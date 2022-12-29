@@ -1,0 +1,18 @@
+//program to display sum of n natural numbers using do-while
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i=1,sum=0,n;
+clrscr();
+printf("\n enter value for n");
+scanf("%d",&n);
+do
+{
+printf("\n\t%d",i);
+sum=sum+i;
+i++;
+}while(i<=n);
+printf("\n sum of natural numbers up to %d are=%d",n,sum);
+getch();
+}

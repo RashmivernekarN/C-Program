@@ -1,0 +1,18 @@
+//program to display hello message 10 times
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int i,n;
+  clrscr();
+  i=1;
+  n=10;
+  do
+  {
+     printf("\n\tHELLO");
+     i++;
+  }while(i<=n);
+  getch();
+}
