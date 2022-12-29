@@ -1,0 +1,23 @@
+//function with return value without arguments
+
+#include<iostream.h>
+#include<conio.h>
+int addition();
+int a,b;
+
+void main()
+{
+   clrscr();
+   cout<<"\nsum="<<addition();
+   getch();
+}
+int addition()
+{
+   cout<<"\nenter any 2 integers";
+   cin>>a>>b;
+   return(a+b);
+}
+
+
+
+

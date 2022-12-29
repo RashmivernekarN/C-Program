@@ -1,0 +1,15 @@
+//program to find biggest of 2 numbers
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+   int a,b,big;
+   clrscr();
+   cout<<"\n\tENTER VALUES FOR a AND b";
+   cin>>a>>b;
+   big=(a>b)?a:b;
+   cout<<"\n\na="<<a<<"\n\tb="<<b<<"\n\tbig="<<big;
+   getch();
+}

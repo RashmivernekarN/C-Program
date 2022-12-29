@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<conio.h>
+
+void circle();
+void square();
+void rect();
+void tri();
+double area,r,s,l,b,h;
+int ch;
+
+void main()
+{
+  clrscr();
+  do
+  {
+     printf("\n\t1.circle\n\t2.square\n\t3.rectangle\n\t4.tri\n\t5.exit\n\t");
+     printf("\n\tenter your choice");
+     scanf("%d",&ch);
+     switch(ch)
+       {
+	  case 1:circle();
+		 break;
+	   case 2:square();
+		 break;
+	   case 3:rect();
+		 break;
+	   case 4:tri();
+		 break;
+	  case 5:exit();
+		 break;
+	   default:printf("\n\tenter valid choice");
+	 }
+	 printf("\n\tdo you want to continue");
+	 scanf("%d",&ch);
+      }while(ch==1);
+    getch();
+ }
+ void circle()
+ {
+    printf("\n\tenter value for r");
+    scanf("%lf",&r);
+    area=3.142*r*r;
+     printf("\n\tarea of circle=%lf",area);
+ }
+ void square()
+ {
+     printf("\n\tenter side of thje square");
+     scanf("%lf",&s);
+     area=s*s;
+     printf("\n\tarea of square=%lf",area);
+ }
+ void rect()
+ {
+   printf("\n\tenter values for l and b");
+   scanf("%lf%lf",&l,&b);
+   area=l*b;
+   printf("\n\tarea of rectangle=%lf",area);
+ }
+ void tri()
+ {
+   printf("\n\tenter base and ht");
+   scanf("%lf%lf",&b,&h);
+   area=0.5*b*h;
+   printf("\n\tarea of tringle=%lf",area);
+}

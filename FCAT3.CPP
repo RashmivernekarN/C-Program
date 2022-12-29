@@ -1,0 +1,23 @@
+//function without return value without arguments
+
+#include<iostream.h>
+#include<conio.h>
+void addition();
+int a,b;//global variable declaration
+
+void main()
+{
+   clrscr();
+   addition();
+   getch();
+}
+void addition()
+{
+   cout<<"\nenter any 2 integers";
+   cin>>a>>b;
+   cout<<"\nsum="<<(a+b);
+}
+
+
+
+

@@ -1,0 +1,16 @@
+//program to find square and cube of a given number
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+   int n,sq,cube;
+   clrscr();
+   cout<<"\n\tenter any integer";
+   cin>>n;
+   sq=n*n;
+   cube=n*n*n;
+   cout<<"\n\tnumber="<<n<<"\nsquare="<<sq<<"\n\tcube="<<cube;
+   getch();
+}

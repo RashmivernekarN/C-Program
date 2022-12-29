@@ -1,0 +1,20 @@
+//program to find area of triangle
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+  float b,h,area;
+  clrscr();
+  cout<<"\n\tenter values for base and height";
+  cin>>b>>h;
+  area=0.5*b*h;
+  cout<<"\n\tarea of triangle";
+  cout<<"\n\tbase="<<b;
+  cout<<"\n\theight="<<h;
+  cout<<"\n\tarea="<<area ;
+
+//  cout<<"\n\tarea of triangle"<<"\n\tbase="<<b<<"\n\theight="<<h<<"\n\tarea="<<area ;
+  getch();
+}
