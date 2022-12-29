@@ -1,0 +1,24 @@
+/*prg to read N array elements and find the sum of even and odd elements*/
+#include <iostream.h>
+#include <conio.h>
+void main()
+{ int a[50],i,se=0,so=0,n;
+  clrscr();
+  cout<<"\n Enter the size of an array";
+  cin>>n;
+  cout<<"\n Enter the array elements";
+  for(i=0;i<n;i++)
+    {
+      cin>>a[i];
+    }
+// compute sum
+  for(i=0;i<n;i++)
+    {
+      if(a[i]%2==0)
+	se=se+a[i];
+      else
+	so=so+a[i];
+    }
+  cout<<"\n sum of even elements="<<se;
+  cout<<"\n sum of odd elements="<<so;
+   getch(); }

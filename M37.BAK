@@ -1,0 +1,34 @@
+   /*prg to check whether the given character is a vowel or not*/
+  #include<stdio.h>
+  #include<conio.h>
+  void main()
+    { char ch;
+      clrscr();
+      printf("\n Enter any character");
+      scanf("%c",&ch);
+      if(ch=='A'||ch=='a')
+	{
+	  printf("\n %c is a vowel",ch);
+	}
+     else if(ch=='E'||ch=='e')
+	{
+	  printf("\n %c is a vowel",ch);
+	}
+     else if(ch=='I'||ch=='i')
+	{
+	  printf("\n %c is a vowel",ch);
+	 }
+     else if(ch=='O'||ch=='o')
+	{
+	  printf("\n %c is a vowel",ch);
+	}
+     else if(ch=='U'||ch=='u')
+	{
+	  printf("\n %c is a vowel",ch);
+	}
+     else
+	{
+	  printf("\n %c is a not a vowel",ch);
+	}
+	getch();
+    }

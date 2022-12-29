@@ -1,0 +1,20 @@
+/*prg to find sum of two numbers using sub program*/
+#include <iostream.h>
+#include <conio.h>
+int sum(int,int);
+void main()
+{
+  int a,b,s;
+  clrscr();
+  cout<<"\n Enter two nums";
+  cin>>a>>b;
+  s=sum(a,b);
+  cout<<"\n sum of two nums="<<s;
+  getch();
+}
+ int sum(int x,int y)
+  {
+    int z;
+    z=x+y;
+    return(z);
+  }

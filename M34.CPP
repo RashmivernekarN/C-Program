@@ -1,0 +1,21 @@
+/* prg to check whether given nums is an armstrong no or not*/
+#include<iostream.h>
+#include<conio.h>
+void main()
+{int n,temp,d,am=0;
+clrscr();
+cout<<"\n enter any num";
+cin>>n;
+temp=n;
+while(n>0)
+{
+d=n%10;
+am=am+(d*d*d);
+n=n/10;
+}
+cout<<"\n Given num is="<<temp;
+if(am==temp)
+  cout<<"\n Given no is an armstrong no";
+else
+  cout<<"\n Given no is  not an amstrong no";
+getch();}
