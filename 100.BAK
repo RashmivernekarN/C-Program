@@ -1,0 +1,18 @@
+/*prg to print nums 1 to 20 even nums using while loop*/
+#include<stdio.h>
+#include<conio.h>
+ void main()
+  {
+     int i=1;
+     clrscr();
+    printf("\n 1 to 20 Even nums area:\n");
+     while(i<=40)
+      {
+       if(i%2==0)
+	 {
+	   printf("\n \t %d",i);
+	 }
+       i++;
+      }
+     getch();
+  }
