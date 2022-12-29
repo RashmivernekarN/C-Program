@@ -1,0 +1,14 @@
+//program to evaluate an expression
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   long int y,a,b,c,x;
+   clrscr();
+   printf("\n\tenter values for a b c x");
+   scanf("%ld%ld%ld%ld",&a,&b,&c,&x);
+   y=a*x*x+b*x+c;
+printf("\n\ty=%ld\n\twhere\n\tx=%ld\n\ta=%ld\n\tb=%ld\n\tc=%ld\n",y,x,a,b,c);
+   getch();
+}

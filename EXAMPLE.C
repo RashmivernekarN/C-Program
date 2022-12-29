@@ -1,0 +1,19 @@
+//program to illustrate function(add 2 numbers)
+
+#include<stdio.h>
+#include<conio.h>
+
+void addition(int ,int );//function declaration
+void main()
+{
+  int a,b;
+  clrscr();
+  printf("\nenter values for a and b");
+  scanf("%d%d",&a,&b);
+  addition(a,b);//calling function-a and b are atual parameters
+  getch();
+}
+void addition(int p,int q) //called function- p and q formal parameters
+{
+   printf("\n\tsum=%d",(p+q));
+}

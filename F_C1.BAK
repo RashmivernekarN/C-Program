@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int a,b,big;
+int sample(int ,int);
+
+void main()
+{
+   clrscr();
+   printf("\nenter vcalues for a and b");
+  scanf("%d%d",&a,&b);
+  printf("\n\tbig=%d",sample(a,b));
+   getch();
+}
+int sample(int p,int q)
+{
+
+  big=p>q?p:q;
+  return(big);
+}
+
