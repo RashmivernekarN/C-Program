@@ -1,0 +1,9 @@
+/*prg to disply a simple message */
+#include<stdio.h>
+#include<conio.h>
+void main()
+ {
+   clrscr();
+   printf("\n All \n The \n Best");
+   getch();
+ }
